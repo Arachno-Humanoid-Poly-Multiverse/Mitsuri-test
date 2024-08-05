@@ -19,7 +19,7 @@ APP_ID = int(os.environ.get("APP_ID", "16575077"))
 API_HASH = os.environ.get("API_HASH", "1c8c0bcb55c14e0fd8078058966b6a11")
 
 
-OWNER = os.environ.get("OWNER", "") #Owner username
+OWNER = os.environ.get("OWNER", "@inOyr") #Owner username
 OWNER_ID = int(os.environ.get("OWNER_ID", "1702061654")) #Owner user id
 DB_URL = os.environ.get("DB_URL", "mongodb+srv://fakefacebook602:inyor1234@cluster0.ukykpoc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DB_NAME = os.environ.get("DB_NAME", "filesharexbot")
