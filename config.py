@@ -14,19 +14,19 @@ from logging.handlers import RotatingFileHandler
 
 
 
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
-APP_ID = int(os.environ.get("APP_ID", ""))
-API_HASH = os.environ.get("API_HASH", "")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6698400452:AAExx74r2C87gzFNMaNhgubRvr3jZb5GOkM")
+APP_ID = int(os.environ.get("APP_ID", "16575077"))
+API_HASH = os.environ.get("API_HASH", "1c8c0bcb55c14e0fd8078058966b6a11")
 
 
 OWNER = os.environ.get("OWNER", "") #Owner username
-OWNER_ID = int(os.environ.get("OWNER_ID", "")) #Owner user id
-DB_URL = os.environ.get("DB_URL", "")
-DB_NAME = os.environ.get("DB_NAME", "madflixbotz")
+OWNER_ID = int(os.environ.get("OWNER_ID", "1702061654")) #Owner user id
+DB_URL = os.environ.get("DB_URL", "mongodb+srv://fakefacebook602:inyor1234@cluster0.ukykpoc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DB_NAME = os.environ.get("DB_NAME", "filesharexbot")
 
 
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID", ""))
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002185863754"))
 
 
 SECONDS = int(os.getenv("SECONDS", "600")) # auto delete in seconds
@@ -39,17 +39,17 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 
 
-START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
+START_MSG = os.environ.get("START_MESSAGE", "<b>ʜᴇʟʟᴏ {first} 🖤\n\nɪ ᴀᴍ ʏᴏᴜʀ ᴡᴀɪꜰᴜ.. 🥵\n\n-> ʏᴏᴜ ᴄᴀɴ ᴜɴᴅʀᴇss ᴍᴇ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ꜰɪʟᴇs sʜᴀʀᴇᴅ ʙʏ ᴍᴀsᴛᴇʀ(ᴀᴅᴍɪɴs)😈\n\n-> ɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ʙᴇ ᴍʏ ᴍᴀsᴛᴇʀ ᴍᴇssᴀɢᴇ ᴍʏ ᴄʀᴇᴀᴛᴏʀ 🤭💦\n\nɢᴇᴛ ʏᴏᴜʀ ꜰɪʟᴇs ᴀɴᴅ ᴇɴᴊᴏʏ 🥀</b>")
 
 try:
     ADMINS=[7085541484]
-    for x in (os.environ.get("ADMINS", "5115691197 6273945163 6103092779 5231212075").split()):
+    for x in (os.environ.get("ADMINS", "1240111170 5906464451").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
 
 
-FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {first}\n\n<b>You need to join in my Channel/Group to use me\n\nKindly Please join Channel</b>")
+FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {first}\n\n<b>💠You Need to Join My Channel to Get Your File\n\nJoin Channel Given Below 👇</b>")
 
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
 
